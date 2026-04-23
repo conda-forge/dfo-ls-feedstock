@@ -1,5 +1,5 @@
 {% set name = "DFO-LS" %}
-{% set version = "1.3.0" %}
+{% set version = "1.5.4" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/DFO-LS-{{ version }}.tar.gz
-  sha256: a6f20b9af9319a320c78f4f056d001028cea12c823edf683f4cf251abe42b311
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
+  sha256: edf61b4c37a06130c54e5b78b49b106c349cf2549e5ae1e940f242c98e04b0f7
 
 build:
   number: 0
